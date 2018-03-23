@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Bakery2018.Models.Person>
+
+@{
+    ViewBag.Title = "PeopleList";
+}
+
+<h2>Customers</h2>
+
+<div class="jumbotron">
+    <h1> Customers </h1>
+
+</div>
+
+
+
+
+<div class="row">
+    <table class="table">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.PersonFirstName)</th>
+            <th>@Html.DisplayNameFor(model => model.PersonLastName)</th>
+            <th>@Html.DisplayNameFor(model => model.PersonEmail)</th>
+            <th>@Html.DisplayNameFor(model => model.PersonKey)</th>
+            <th>@Html.DisplayNameFor(model => model.PersonDateAdded)</th>
+            <th>@Html.DisplayNameFor(model => model.PersonEmail)</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(model => item.PersonFirstName)</td>
+                <td>@Html.DisplayFor(model => item.PersonLastName)</td>
+                <td>@Html.DisplayFor(model => item.PersonEmail)</td>
+                <td>@Html.DisplayFor(model => item.PersonKey)</td>
+                <td>@Html.DisplayFor(model => item.PersonDateAdded)</td>
+                <td>@Html.DisplayFor(model => item.PersonEmail)</td>
+            </tr>
+        }
+    </table>
+</div>
+
