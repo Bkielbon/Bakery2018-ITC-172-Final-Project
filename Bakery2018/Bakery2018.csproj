@@ -153,6 +153,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\RegistrationController.cs" />
+    <Compile Include="Controllers\SalesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -178,6 +179,7 @@
     <Compile Include="Models\Person.cs">
       <DependentUpon>BakeryModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\PointOfSale.cs" />
     <Compile Include="Models\Product.cs">
       <DependentUpon>BakeryModel.tt</DependentUpon>
     </Compile>
@@ -248,6 +250,9 @@
     <Content Include="Views\Registration\PeopleList.cshtml" />
     <Content Include="Views\Registration\Index.cshtml" />
     <Content Include="Views\Products\Register.cshtml" />
+    <Content Include="Views\Products\Result.cshtml" />
+    <Content Include="Views\Sales\Index.cshtml" />
+    <Content Include="Views\Sales\Receipt.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
